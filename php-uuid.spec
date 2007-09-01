@@ -6,7 +6,7 @@
 Summary:	UUID support functions for php
 Name:		php-%{modname}
 Version:	1.0
-Release:	%mkrel 8
+Release:	%mkrel 9
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/%{modname}
@@ -27,15 +27,7 @@ available on most linux  systems, its source is bundled with the ext2fs tools.
 %setup -q -n %{modname}-%{version}
 
 %build
-export CFLAGS="%{optflags}"
-export CXXFLAGS="%{optflags}"
-export FFLAGS="%{optflags}"
-
-%if %mdkversion >= 200710
-export CFLAGS="$CFLAGS -fstack-protector"
-export CXXFLAGS="$CXXFLAGS -fstack-protector"
-export FFLAGS="$FFLAGS -fstack-protector"
-%endif
+%serverbuild
 
 phpize
 %configure2_5x --with-libdir=%{_lib} \
