@@ -15,7 +15,6 @@ BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libext2fs-devel
 Provides:	php-pear-uuid
 Obsoletes:	php-pear-uuid
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This extension provides functions to generate and analyse universally unique
