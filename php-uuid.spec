@@ -5,12 +5,12 @@
 
 Summary:	UUID support functions for php
 Name:		php-%{modname}
-Version:	1.0
-Release:	%mkrel 11
+Version:	1.0.2
+Release:	%mkrel 1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/%{modname}
-Source0:	http://pecl.php.net/get/%{modname}-%{version}.tar.bz2
+Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libext2fs-devel
 Provides:	php-pear-uuid
