@@ -6,7 +6,7 @@
 Summary:	UUID support functions for php
 Name:		php-%{modname}
 Version:	1.0.2
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/%{modname}
@@ -15,7 +15,7 @@ BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libext2fs-devel
 Provides:	php-pear-uuid
 Obsoletes:	php-pear-uuid
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This extension provides functions to generate and analyse universally unique
