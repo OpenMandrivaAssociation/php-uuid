@@ -13,6 +13,7 @@ URL:		http://pecl.php.net/package/%{modname}
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	libext2fs-devel
+BuildRequires:	libuuid-devel
 Provides:	php-pear-uuid
 Obsoletes:	php-pear-uuid
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
