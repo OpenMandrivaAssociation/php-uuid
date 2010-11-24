@@ -6,7 +6,7 @@
 Summary:	UUID support functions for php
 Name:		php-%{modname}
 Version:	1.0.2
-Release:	%mkrel 14
+Release:	%mkrel 15
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/%{modname}
