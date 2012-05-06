@@ -11,6 +11,7 @@ Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/%{modname}
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
+Patch0:		uuid-1.0.2-php54x.diff
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	ext2fs-devel
 BuildRequires:	libuuid-devel
@@ -26,6 +27,7 @@ available on most linux  systems, its source is bundled with the ext2fs tools.
 %prep
 
 %setup -q -n %{modname}-%{version}
+%patch0 -p0
 
 %build
 %serverbuild
